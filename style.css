@@ -1,0 +1,45 @@
+body {
+  background: #282828;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+}
+
+ul {
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+  position: relative;
+
+}
+
+ul a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.link1::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: red;
+  transition: .5s;
+  background-position: 100%;
+  background-size: cover;
+}
+
+.link1:hover::after {
+  width: 100%;
+  transition: .5s;
+  background: red;
+  transform: translatex(right);
+}
